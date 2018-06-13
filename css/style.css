@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "OpenSans-Light"; /* Гарнитура шрифта */
+    src: url(fonts/opensanslight.woff2); /* Путь к файлу со шрифтом */
+    font-weight: normal;
+    font-style: normal;
+   }
+@font-face {
+    font-family: "OpenSans"; /* Гарнитура шрифта */
+    src: url(fonts/opensans.woff2); /* Путь к файлу со шрифтом */
+    font-weight: bold;
+    font-style: normal;
+   }
+@font-face {
+    font-family: "Gilroylight"; /* Гарнитура шрифта */
+    src: url(fonts/gilroylight.woff2); /* Путь к файлу со шрифтом */
+    font-weight: normal;
+    font-style: normal;
+   }
+@font-face {
+    font-family: "Gilroyextrabold"; /* Гарнитура шрифта */
+    src: url(fonts/gilroyextrabold.woff2); /* Путь к файлу со шрифтом */
+    font-weight: bold;
+    font-style: normal;
+   }
+
+body {
+    margin: 0;
+    padding: 0;  
+    font-family: "OpenSans-Light", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 15px;    
+    color: #000000;    
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    font-family: "Gilroyextrabold", Arial, sans-serif;  
+    font-size: 18px;
+    padding: 5px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    vertical-align: middle;
+    text-transform: uppercase;  
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(to bottom, transparent 10px, #f4d361 10px, #f4d361 12px, #f0c52e 12px, #f0c52e 16px, #f4d361 16px, #f4d361 18px, transparent 18px);
+    border: none;
+} 
+
+.button:hover,
+.button:focus {
+    background-color: #f0c52e;
+}
+ 
+.button:active {
+    color: rgb(0, 0, 0, 0.3);
+}

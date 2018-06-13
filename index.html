@@ -3,11 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>      
         <header class="main_navigation">          
           <div><a class="main_header_logo">DEVICE</a></div>
-          <div>Поиск по сайту</div>
+            <div class="search_cite">
+            <form action="/echo" method="post">          
+                <label for="search">Поиск по сайту</label>          
+                <input type="search" name="search">
+            </form>
+            </div>
           <div>Имя посетителя</div>
             <ul class="user-navigation">
                 <li class="login-link"><a href="#">Войти</a></li>
@@ -48,10 +55,10 @@
                     <p>Самая длинная палка для селфи доступна в нашем магазине.
                     Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.                    
                     </p>                
-                    <div><a class="button" href="#">Подробне</a></div>                  
+                    <div><a class="button" href="#">Подробнее</a></div>                  
                         <table class="best_device_characteristic">
                             <tr class="value_one"></tr>
-                                <td>8,5 м/td>
+                                <td>8,5 м</td>
                                 <td>5 кг</td>
                                 <td>Карбон</td>
                             </tr>
@@ -70,7 +77,7 @@
                     правильно!</p>
                     <p>Мотивирующие фитнес-браслеты помогут найти в себе силы 
                     не пропускать занятия и соблюдать диету.</p> 
-                    <div><a class="button" href="#">Подробне</a></div>                  
+                    <div><a class="button" href="#">Подробнее</a></div>                  
                         <table class="best_device_characteristic">
                             <tr class="value_one"></tr>
                                 <td>48 часов</td>                               
@@ -87,7 +94,7 @@
                         жалит как пчела!</p>
                     <p>Этот обычный, на первый взгляд, квадрокоптер оснащен 
                     мощным лазером, замаскированным под стандартную камеру.</p>
-                    <div><a class="button" href="#">Подробне</a></div>                  
+                    <div><a class="button" href="#">Подробнее</a></div>                  
                         <table class="best_device_characteristic">
                             <tr class="row_value--one"></tr>
                                 <td>800 м</td>
@@ -111,9 +118,9 @@
         <section class="service">
             <h1 class="visually-hidden">Устройства для селфи</h1>
             <div class="services">/*gl eb 18*/
-                <div><a class="button" href="#"></a>Доставка</a></div>
-                <div><a class="button" href="#"></a>Гарантия</a></div>
-                <div><a class="button" href="#"></a>Кредит</a></div>
+                <div><a class="button_service" href="#"></a>Доставка</a></div>
+                <div><a class="button_service" href="#"></a>Гарантия</a></div>
+                <div><a class="button_service" href="#"></a>Кредит</a></div>
             </div>
             <div class="services_description">
                 <h2>Доставка</h2>
@@ -189,8 +196,8 @@
                     <p>г. Москва, ул. Строителей, 15</p>                    
                     <ul class="menu_service">
                         <li><a href="#">Доставка</a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
+                        <li><a href="#">Гарантия</a></li>
+                        <li><a href="#">Кредит</a></li>
                     </ul>
                     <a href="tel:+79454959595" >Тел.: +7 (495) 495-95-95</a>
                     <div class="footer-social">            
@@ -198,7 +205,12 @@
                         <a class="social-button" href="#">Инстаграм</a>
                         <a class="social-button" href="#">Твиттер</a>
                     </div>
-        </footer>      
+        </footer>   
+        <section class="filters">
+            <h2 class="visually-hidden">Фильтр:</h2>
+            <form class="filter" method="get" action="https://echo.htmlacademy.ru"></form>
+                <fieldset>    
+             
   </body>
 </html>
 
