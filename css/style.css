@@ -29,7 +29,9 @@
     body {
     margin: 0;
     padding: 0;  
-    min-width: 1440px;  
+    max-width: 1160px;
+    margin: 0px auto; 
+    text-align: left;
     font-family: "Open Sans", Arial, sans-serif;
     font-weight: 400;
     font-size: 15px;
@@ -42,6 +44,29 @@ a {
     text-decoration: none;
     color: #000000; 
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+.visually-hidden:not(:focus):not(:active),
+  input[type="checkbox"].visually-hidden,
+  input[type="radio"].visually-hidden {
+    position: absolute;
+  
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+  
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 ul,
 li {
@@ -106,6 +131,69 @@ li {
     background-image: none;
 }
 
+header {
+    max-width: 1160;
+   
+    min-height: 700;
+    background-color: rgba(240, 197, 46, 0.5);    
+}
+
+.wrapper_header {
+    width: 1040px;
+}
+.wrapper_header,
+.user-navigation {   
+    display: flex;
+    justify-content: space-between;       
+}
+
+.search_cite li,
+.user-navigation li {
+    display: block;
+}
+
+.user-navigation {
+    display: flex;
+    width: 240px;
+}
+
+.search::before {
+    content: "";  
+    width: 16px;
+    height: 18px;
+    background-color: #ff0000;    
+}
+
+.user-navigation {
+    position: relative;
+}
+
+.login-link a {
+    padding-left: 30px;    
+}
+
+
+.login-link::before {
+    content: "";  
+    width: 16px;
+    height: 18px;    
+    position: absolute;
+    background-image: url("../img/user.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top: 2px;
+  }
+  
+
+  .search::before {
+    content: "";  
+    width: 16px;
+    height: 18px;   
+    background-color: #ff0000; 
+  }
+
+
+
 .main_header_logo {
     font-family: "Gilroy", Arial, sans-serif;
     font-weight: 800;
@@ -136,6 +224,34 @@ li {
     font-size: 18px; 
     letter-spacing: 3px;
     text-transform: uppercase;
+}
+
+.nav_list {
+    width: 1000px;
+}
+
+.nav_list a {
+    display: block;
+}
+
+.nav_list>li {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+.nav_list>li:first-child {
+    
+    float: left;
+}
+
+.nav_list .dropdown {
+    position: absolute;
+    display: flex;
+}
+
+.dropdown li a {
+    width: 300px;
 }
 
 h3 {
@@ -383,3 +499,6 @@ fieldset legend {
 .cost {
     color: rgba(70, 70, 70) 
 }
+
+
+
