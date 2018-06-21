@@ -33,14 +33,14 @@
     margin: 0px auto; 
     text-align: left;
     font-family: "Open Sans", Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 15px;
     line-height: 15px;    
     color: #000000;    
     background-color: #ffffff;
-    background-image:  url("../img/device-index.jpg");
+    background-image:  url("../img/device-index3.png");
     background-size: 1440px 2795px;
-    background-position-x: 42px;
+    background-position-x: 232px;
     background-repeat: no-repeat;
 
 }
@@ -80,13 +80,13 @@ li {
   }
 
 .button { 
-    width: 200px;    
+    width: 220px;    
     font-family: "Gilroy", Arial, sans-serif;
     font-weight: 800;
     font-size: 18px;    
     line-height: 40px;
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     color: #000000;
     vertical-align: middle;
     text-transform: uppercase;  
@@ -101,32 +101,6 @@ li {
 
 .button:active a {
     color: rgb(0, 0, 0, 0.3);    
-}
-
-.button_service {
-    width: 200px;    
-    font-family: "Gilroy", Arial, sans-serif;
-    font-weight: 800;
-    font-size: 18px;    
-    line-height: 40px;    
-    text-align: center;
-    letter-spacing: 3px;
-    color: #000000;
-    vertical-align: middle;
-    text-transform: uppercase;  
-    background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(transparent 16px, #f4d361 16px, #f4d361 17px, #f0c52e 17px, #f0c52e 23px, #f4d361 23px, #f4d361 24px, transparent 24px);    border: none;
-}
-
-.button_service:hover,
-.button_service:focus {
-    background-color: #f0c52e;
-    outline: none;
-}
- 
-.button_service a:active {
-    color: #f7e184;
-    padding-right: 78px;    
 }
 
 .button_service:active {    
@@ -182,7 +156,8 @@ li {
 .user-navigation*/ {   
     display: flex;
     justify-content: space-between; 
-    align-items: center;      
+    align-items: center;  
+    padding: 30px 0;     
 }
 
 .search_cite,
@@ -214,21 +189,29 @@ li {
     background-position: 0 0;
     top: 2px;
   }
-  
-.search::before {
-    padding-left: 30px;
-}
+ 
+	
 
-.search::before {
+input[type="search"]{
+    border: none;
+    background-color: transparent;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    padding-left: 20px;
+} 
+
+
+input[type="search"]::before {
     content: "";  
     width: 16px;
-    height: 18px;   
-    background-color: #ff0000; 
+    height: 18px;    
     position: absolute;
-    background-image: url("../img/user.svg");
+    background-image: url("../img/search.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    top: 2px;
+    
+    padding-left: 30px;
   }
   
 .nav_link_catalog>a {
@@ -237,46 +220,34 @@ li {
     font-size: 18px; 
     letter-spacing: 3px;
     text-transform: uppercase;
+    
+}
+.catalog_two a{
+    margin-left: 110px;
+}
+.catalog_tree a{
+    margin-left: 100px;
+}
+.catalog_four a{
+    margin-right: 40px;
 }
 
 .nav {
     display: flex;
-    padding-right: 20px;
-}
-.nav_list {
-    width: 1040px;
+    width: 1160px;
+    justify-content: space-around;
 }
 
-.nav_list a {
-    display: block;
-}
-
-.nav_list>li {
-    position: relative;
-    display: inline-block;
-    float: right;
-}
-
-.nav_list>li:first-child {    
-    float: left;    
-}
-
-.nav_list .dropdown {
-    position: absolute;
+.service_nav {
     display: flex;
-    max-width: 540px;
-}
-.dropdown a {
-    display: none;
+    justify-content: space-around;
+    width: 500px;
 }
 
-.nav_link_catalog:hover .dropdown a {
-    display: block;
+.service_nav a {
+    margin-left: 100px;
 }
 
-ul.dropdown {
-    margin-left: -80px;  
-}
 .dropdown a {
     width: 190px;
 }
@@ -286,19 +257,112 @@ ul.dropdown {
 }
 
 
+.nav_list a {
+    display: block;
+}
+
+.nav_list>li {
+    position: relative;
+    display: inline-block;
+    margin-left: -100px;
+}
+
+/*.nav_list>li:first-child {    
+    float: left;    
+}*/
+
+.nav_list .dropdown {
+    position: absolute;
+    display: flex;   
+}
+
+ul.dropdown {
+    margin-left: -80px;
+}
+.dropdown a {
+    display: none;
+}
+
+.nav_link_catalog:hover .dropdown a {
+    display: block;
+}
+
+
+
+
+
 
 h3 {
     font-family: "Gilroy", Arial, sans-serif;
     font-weight: 800;
     font-size: 18px; 
 }
-   
+
+/*лучшие товары*/
+
+.best_device {
+    display: flex; 
+    justify-content: flex-start;  
+    align-items: center;    
+}
+
+.best_device {
+    margin-top: -110px;
+    z-index: 10;
+    position: relative;
+    min-height: 490px;
+}
+
+.best_device_longest,
+.motive_wristband,
+.laser_kvadro,
+.discription_best_device {
+    width: 580px;
+}
+
+.best_device_two div.discription_best_device {
+    margin-top: 30px;
+    margin-left: 35px;
+}
+
+.best_device_two img {    
+    margin-left: 115px;
+}
+
+.best_device_one div.discription_best_device {
+    margin-top: 30px;
+    margin-left: 35px;
+}
+
+.best_device_one img {    
+    margin-left: 90px;
+    margin-bottom: 5px;
+}
+
+.best_device_three div.discription_best_device {
+    margin-top: 30px;
+    margin-left: 35px;
+}
+
+.best_device_three img {    
+    margin-left: 30px;
+    margin-bottom: 25px;
+}
+
     
-.slogan {
+.slogan,
+h2 {
     font-family: "Gilroy", Arial, sans-serif;
     font-weight: 800;
     font-size: 47px;
-    line-height: 56px; 
+    line-height: 56px;    
+}
+
+.slogan_text {
+    line-height: 34px; 
+    display: inline-block;
+    margin-top: -34px;
+    margin-bottom: 42px;    
 }
 
 th {
@@ -314,6 +378,12 @@ th:nth-child(2) {
     padding-right: 90px;
 }
 
+
+.discription_best_device>div{
+    margin-bottom: 65px;
+    
+}
+
 td {
     font-family: "Open Sans", Arial, sans-serif;
     font-weight: 300;
@@ -322,11 +392,39 @@ td {
     padding-bottom: 20px;      
 }
 
+.best_device_two {
+    display: none;
+    
+}
+
+.best_device_one {
+    display: none;
+}
+
+
+.best_device {
+    margin-bottom: 95px;
+}
+
+/*лучшие товары*/
+
+/*меню картинки*/
 
 .menu_devices {
-display: flex;
-
+    display: flex;
+    width: 1160px;
+    justify-content: space-between;
+    margin-left: -40px;
+    margin-bottom: 95px;
 }
+
+.menu_devices h3 {
+    line-height: 27px; 
+    
+    padding-top: 10px;
+}
+   
+
 .menu_devices_all {
     position: relative;   
     width: 160px;
@@ -383,6 +481,98 @@ display: flex;
     background-image: url("../img/popular-Q_6.svg");
 }
 
+
+/*меню картинки*/
+
+/*Доставка Гарантия Кредит*/
+
+.button_service {
+    width: 160px;    
+    font-family: "Gilroy", Arial, sans-serif;
+    font-weight: 800;
+    font-size: 18px;    
+    line-height: 40px;    
+    text-align: center;
+    letter-spacing: 3px;
+    color: #000000;
+    
+    vertical-align: middle;
+    text-transform: uppercase;  
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(transparent 16px, #f4d361 16px, #f4d361 17px, #f0c52e 17px, #f0c52e 23px, #f4d361 23px, #f4d361 24px, transparent 24px);    border: none;
+}
+
+.button_service:hover,
+.button_service:focus {
+    background-color: #f0c52e;
+    outline: none;
+}
+ 
+.button_service a:active {
+    color: #f7e184;
+    padding-right: 78px;    
+}
+.service_menu {    
+    height: 390px;   
+    margin-bottom: 65px;
+}
+
+.services_wrepper {
+    display: flex;
+    
+}
+
+.services_description {
+    display: flex;
+}
+
+
+.services_name div {
+    margin: 23px 0;
+}
+.services_name {   
+    width: 450px;
+    margin-top: 25px;
+}
+.warranty {
+    display: none;
+}
+
+.assurance {
+    display: none;
+}
+
+
+/*Доставка Гарантия Кредит*/
+
+/*logo*/
+
+ul.producer_logo { 
+    width: 1160px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+    flex-wrap: wrap;
+    padding-bottom: 95px;
+} 
+
+
+
+
+/*logo*/
+
+/*about_us*/
+
+.about_us {
+    width: 1160px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding-bottom: 85px;
+    min-height: 570px;
+}
+
 .transport_company li{
     list-style-type: circle; 
 }
@@ -392,6 +582,72 @@ display: flex;
     font-weight: 800;
     font-size: 16px;
 }
+
+.about_us p {
+    line-height: 32px; 
+    display: block;
+    margin-bottom: 32px;
+    margin-top: -5px;
+    width: 478px;
+}
+
+.contacts {
+    margin-left: 120px;
+}
+
+.contacts .button {
+    margin-top: 75px;
+    width: 260px;
+}
+.contacts .button {
+    margin-top: 75px;
+    width: 260px;
+}
+
+ul.transport_company {
+    padding-top: 42px;
+    padding-bottom: 27px;
+}
+.transport_company li {
+    padding-bottom: 25px;
+}
+
+/*about_us*/
+
+/*Напишите нам-форма*/
+
+.menu_service a,
+fieldset legend {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-weight: 800;
+    font-size: 18px;   
+    text-transform: uppercase;
+}
+
+.write_to_us p {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: #000000;
+
+}
+.write_to_us input[type="text"],
+.write_to_us input[type="email"],
+.write_to_us textarea {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(229, 229, 229); 
+    border: none;
+    padding-left: 20px;
+}
+
+/*Напишите нам*/
+
+/*footer*/
+
+
 
 .main_footer_logo {
     font-family: "Gilroy", Arial, sans-serif;
@@ -437,32 +693,8 @@ display: flex;
     background-repeat: no-repeat;    
 }
 
-.menu_service a,
-fieldset legend {
-    font-family: "Gilroy", Arial, sans-serif;
-    font-weight: 800;
-    font-size: 18px;   
-    text-transform: uppercase;
-}
 
-.write_to_us p {
-    font-family: "Gilroy", Arial, sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    color: #000000;
-
-}
-.write_to_us input[type="text"],
-.write_to_us input[type="email"],
-.write_to_us textarea {
-    font-family: "Gilroy", Arial, sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    color: rgba(0, 0, 0, 0.4);
-    background-color: rgba(229, 229, 229); 
-    border: none;
-    padding-left: 20px;
-}
+/*footer*/
 
 /*page2*/
 

@@ -15,9 +15,9 @@
             <div class="wrapper_header">  
                 
                     <div class="search_cite">
-                    <form action="/echo" method="post">                      
+                    <form action="/echo" method="post" class="search1">                      
                         <label class="search" for="search"></label>          
-                        <input type="search" name="search" placeholder="Поиск по сайту">
+                        <input type="search" id="search" placeholder="Поиск по сайту">
                         
                         
                     </form>
@@ -39,6 +39,7 @@
                 <ul class="nav_list">
                     <li class="nav_link_catalog">
                         <a  class="interaction" href="#">Каталог товаров</a>
+
                         <ul class="dropdown">
                                 <ul class="dropdown_three">
                                         <li><a class="interaction" href="#">Виртуальная реальность</a></li>
@@ -53,27 +54,31 @@
                                         <li><a class="interaction" href="#">Квадрокоптеры</a></li>
                                     </ul>
                         </ul>
-                    </li>
-                    <li class="nav_link_catalog"><a class="interaction" href="#">Контакты</a></li>
-                    <li class="nav_link_catalog"><a class="interaction" href="#">Гарантия</a></li>
-                    <li class="nav_link_catalog"><a class="interaction" href="#">Доставка</a></li>
+                    </ul>
+                <ul class="service_nav">
+                    <li class="nav_link_catalog catalog_two"><a class="interaction" href="#">Доставка</a></li>
+                    <li class="nav_link_catalog catalog_three"><a class="interaction" href="#">Гарантия</a></li>
+                    <li class="nav_link_catalog catalog_four"><a class="interaction" href="#">Контакты</a></li>
                 </ul>               
             </nav>  
            
         </header>
     
         <section id="best_device">
-            <div class="best_device">
+           
+            <div class="best_device best_device_one">                
+
                 <div class="best_device_longest"><img src="img/best_device_longest.png" width="384" height="486"
                     alt="Самая длинная палка для селфи"></div>
                 <div class="discription_best_device">
                     <p class="slogan">Делай селфи,<br>
                     как Бен Стиллер!</p>
-                    <p>Самая длинная палка для селфи доступна в нашем магазине.
+                    <p class="slogan_text">Самая длинная палка для селфи доступна в нашем магазине. <br>
                     Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.                    
                     </p>                
                     <div class="button"><a href="#">Подробнее</a></div>                  
-                        <table class="best_device_characteristic">
+                            
+                            <table class="best_device_characteristic">
                             <tr class="value_one">
                                 <th>8,5 м</th>
                                 <th>5 кг</th>
@@ -84,15 +89,18 @@
                                 <td>Вес палки</td>
                                 <td>Материал</td>
                             </tr>
-                        </table>
-                </div> 
+                        </table>                        
+                </div>            
             </div>
-            <div class="best_device">
-                <div class="motive_wristband"><img src="img/motive_wristband.png" width="#" height="#" alt="Мотивирующий фитнес-браслет"></div>
+
+            <div class="best_device best_device_two">
+
+                <div class="motive_wristband"><img src="img/motive_wristband.png" width="345" height="485" 
+                    alt="Мотивирующий фитнес-браслет"></div>
                 <div class="discription_best_device">
                     <p class="slogan">Худеем<br>
                     правильно!</p>
-                    <p>Мотивирующие фитнес-браслеты помогут найти в себе силы 
+                    <p class="slogan_text">Мотивирующие фитнес-браслеты помогут найти в себе силы 
                     не пропускать занятия и соблюдать диету.</p> 
                     <div class="button"><a href="#">Подробнее</a></div>                  
                         <table class="best_device_characteristic">
@@ -103,13 +111,17 @@
                                 <td>Без подзарядки</td>                                
                             </tr>
                         </table> 
+                    </div>
             </div>
-            <div class="best_device">
-                <div class="best_device_longest"><img src="img/laser_kvadro.png" width="#" height="#" alt="Квадрокоптер с лазером"></div>
-                <div class="laser_kvadro">
+
+            <div class="best_device  best_device_three">
+                
+                <div class="laser_kvadro"><img src="img/laser_kvadro.png" width="526" height="334" 
+                    alt="Квадрокоптер с лазером"></div>
+                <div class="discription_best_device">
                     <p class="slogan">Порхает как бабочка,<br>
                         жалит как пчела!</p>
-                    <p>Этот обычный, на первый взгляд, квадрокоптер оснащен 
+                    <p class="slogan_text">Этот обычный, на первый взгляд, квадрокоптер оснащен 
                     мощным лазером, замаскированным под стандартную камеру.</p>
                     <div class="button"><a href="#">Подробнее</a></div>                  
                         <table class="best_device_characteristic">
@@ -121,9 +133,14 @@
                                 <td>Дальность полета</td>
                                 <td>Радиус поражения</td>                            
                             </tr>
-                        </table>            
+                        </table>                    
+                </div>      
+            </div>       
         </section>
-                <ul class="menu_devices">
+            <section class="menu_cards">
+
+            <h1 class="visually-hidden">Устройства для селфи</h1>
+            <ul class="menu_devices">
                     <li>                        
                         <a href="#">
                             <div class="menu_devices_all">
@@ -178,56 +195,74 @@
                             <h3>Квадрокоптеры</h3> 
                         </a>                    
                     </li>                   
-                </ul>                               
-        <section class="service">
-            <h1 class="visually-hidden">Устройства для селфи</h1>
-            <div class="services">
-                
-                <div class="button_service"><a href="#">Доставка</a></div>
-                <div class="button_service"><a href="#">Гарантия</a></div>
-                <div class="button_service"><a href="#">Кредит</a></div>
-            </div>
+                </ul> 
+        </section>         
+
+        <section class="service_menu">
+            
+        <div class="services_wrepper">
+
+                <div class="services_name">                
+                    <div class="button_service"><a href="#">Доставка</a></div>
+                    <div class="button_service"><a href="#">Гарантия</a></div>
+                    <div class="button_service"><a href="#">Кредит</a></div>
+                </div>
+            
             <div class="services_description">
-                <h2>Доставка</h2>
-                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду 
-                    совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-            </div>
-            <div>
+                <div class="delivery">
+                    <h2>Доставка</h2>
+                    <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду 
+                        совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                </div>
+                <div>
                     <img src="img/delivery.svg" width="136" height="164">
-            </div>
-            <div class="assurance">
-                <h2>Гарантия</h2>
-                <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, 
-                    мы выдадим вам новый. Товар, не дом, конечно же.</p>
-            </div>
-            <div>
-                    <img src="img/warranty.svg" width="171" height="194">
-            </div>
-            <div class="assurance">
+                </div>
+
+                <div class="warranty">
+                    <div>
+                    <h2>Гарантия</h2>
+                    <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, 
+                        мы выдадим вам новый. Товар, не дом, конечно же.</p>
+                    </div>
+                    <div>
+                        <img src="img/warranty.svg" width="171" height="194">
+                    </div>
+                </div>
+
+                <div class="assurance">
+                    <div>
                     <h2>Кредит</h2>
                     <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, 
                         мы выдадим вам новый. Товар, не дом, конечно же.</p>
-                </div>
-                <div>
+                     </div>
+                    <div>
                         <img src="img/credit.svg" width="156" height="186">
+                    </div>
+                </div>
             </div>
+        </div>
         </section>
-        <section class="producer"></section>    
+
+
+
+
+        <section class="producer"> 
                 <ul class="producer_logo">
-                    <li>
-                        <a></a><img src="img/dji_small.jpg" width="245" height="100" alt="">
-                    </li>
-                    <li>
-                        <a></a><img src="img/sp_small.jpg" width="245" height="100" alt="#">
-                    </li>
-                    <li>
-                        <a></a><img src="img/gopor_small.jpg" width="245" height="100" alt="#">
-                    </li>
-                    <li>
-                        <a></a><img src="img/vive_small.jpg" width="245" height="100" alt="#">
-                    </li>                        
-                </ul>
+                        <li>
+                            <a><img src="img/dji_small.jpg" width="260" height="100" alt=""></a>
+                        </li>
+                        <li>
+                            <a><img src="img/sp_small.jpg" width="260" height="100" alt="#"></a>
+                        </li>
+                        <li>
+                            <a><img src="img/gopor_small.jpg" width="260" height="100" alt="#"></a>
+                        </li>
+                        <li>
+                            <a><img src="img/vive_small.jpg" width="260" height="100" alt="#"></a>
+                        </li>                        
+                    </ul>
         </section>
+
         <section class="about_us">
             <div class="about">
                 <h2>О нас</h2>
@@ -245,11 +280,13 @@
                 <h2>Контакты</h2>
                 <p>Вы можете забрать товар сами, заехав в наш офис. 
                     Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>                
-                <a href="map.html"><img src="#" width="" 
-                    height="" alt="Карта"></a>
+                <a href="map.html"><img src="img/map_small.jpg" width="560" 
+                    height="222" alt="Карта"></a>
                 <div class="button"><a href="#">Напишите нам</a></div>
             </div>
-        </section>        
+        </section>   
+        
+        
         <footer>
                 <div><a class="main_footer_logo">DEVICE</a></div>                
                 <ul class="user-navigation">
