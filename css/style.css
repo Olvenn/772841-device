@@ -38,7 +38,7 @@
     line-height: 15px;    
     color: #000000;    
     background-color: #ffffff;
-    background-image:  url("../img/device-index3.png");
+    background-image:  url("../img/device-index.png");
     background-size: 1440px 2795px;
     background-position-x: 232px;
     background-repeat: no-repeat;
@@ -189,6 +189,36 @@ li {
     background-position: 0 0;
     top: 2px;
   }
+
+.compare a {
+    margin-left: 20px;    
+}
+
+.compare::before {
+    content: "";  
+    width: 16px;
+    height: 18px;    
+    position: absolute;
+    background-image: url("../img/compare.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top: 2px;
+}
+
+.backet a {
+    margin-left: 20px;    
+}
+
+.backet::before {
+    content: "";  
+    width: 16px;
+    height: 18px;    
+    position: absolute;
+    background-image: url("../img/cart.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top: 2px;
+}
  
 	
 
@@ -198,21 +228,23 @@ input[type="search"]{
     font-family: "Open Sans", Arial, sans-serif;
     font-weight: 400;
     font-size: 15px;
+    color: rgba(0, 0, 0, 0.3);
     padding-left: 20px;
-} 
-
-
-input[type="search"]::before {
-    content: "";  
-    width: 16px;
-    height: 18px;    
-    position: absolute;
     background-image: url("../img/search.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    
-    padding-left: 30px;
-  }
+} 
+input[type="search"]:hover,
+input[type="search"]:focus {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+input[type="search"]:active {
+    color: rgba(0, 0, 0);
+}
+
+
+
   
 .nav_link_catalog>a {
     font-family: "Gilroy", Arial, sans-serif;
@@ -236,6 +268,7 @@ input[type="search"]::before {
     display: flex;
     width: 1160px;
     justify-content: space-around;
+    
 }
 
 .service_nav {
@@ -250,6 +283,7 @@ input[type="search"]::before {
 
 .dropdown a {
     width: 190px;
+    padding-top: 10px;
 }
 
 .dropdown_one {
@@ -304,6 +338,7 @@ h3 {
     display: flex; 
     justify-content: flex-start;  
     align-items: center;    
+    position: absolute;
 }
 
 .best_device {
@@ -348,7 +383,6 @@ h3 {
     margin-left: 30px;
     margin-bottom: 25px;
 }
-
     
 .slogan,
 h2 {
@@ -358,7 +392,8 @@ h2 {
     line-height: 56px;    
 }
 
-.slogan_text {
+.slogan_text,
+.services_description p {
     line-height: 34px; 
     display: inline-block;
     margin-top: -34px;
@@ -371,17 +406,12 @@ th {
     font-size: 36px; 
     text-align: left;
     padding-bottom: 20px;
-    padding-right: 70px;
+    width: 155px;
+    /*padding-right: 70px;*/
 }
 
 th:nth-child(2) {
     padding-right: 90px;
-}
-
-
-.discription_best_device>div{
-    margin-bottom: 65px;
-    
 }
 
 td {
@@ -392,14 +422,26 @@ td {
     padding-bottom: 20px;      
 }
 
-.best_device_two {
-    display: none;
+.discription_best_device>div{
+    margin-bottom: 65px;
     
 }
 
+
+
+.best_device_two {
+    display: none;    
+}
+
+.best_device_three {
+    display: none;    
+}
+
+ /*
 .best_device_one {
     display: none;
 }
+*/
 
 
 .best_device {
@@ -510,21 +552,43 @@ td {
  
 .button_service a:active {
     color: #f7e184;
-    padding-right: 78px;    
+    padding-right: 78px;  
+    background-color: rgba(0, 0, 0);     
 }
+
+.button_service:active {
+    color: #f7e184;
+    padding-right: 78px;  
+    background-color: rgba(0, 0, 0);     
+}
+
+
 .service_menu {    
     height: 390px;   
     margin-bottom: 65px;
+    width: 1160px;
+    padding: 0  140px;
+    margin-left: -140px;
+    background-image: linear-gradient(#ffffff 30px,#e5e5e5 31px, #e5e5e5);    
 }
 
 .services_wrepper {
     display: flex;
+    max-width: 1160px;
     
 }
-
 .services_description {
+    margin-left: 80px;
+}
+
+.services_description p {
+    padding-right: 80px;
+}
+
+.services {
     display: flex;
 }
+
 
 
 .services_name div {
@@ -590,6 +654,7 @@ ul.producer_logo {
     margin-top: -5px;
     width: 478px;
 }
+
 
 .contacts {
     margin-left: 120px;
