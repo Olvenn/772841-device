@@ -31,38 +31,43 @@
                 <li class="backet"><a class="interaction" href="#">Корзина</a></li>
                 </ul> 
             </div> 
-            </div>
+           
             
             <nav class="nav">
                 <ul class="nav_list">
                     <li class="nav_link_catalog">
                         <a  class="interaction" href="#">Каталог товаров</a>
 
-                        <ul class="dropdown">
-                                <ul class="dropdown_three">
-                                        <li><a class="interaction" href="#">Виртуальная реальность</a></li>
-                                        <li><a class="interaction" href="catalog.html">Моноподы для селфи</a></li>
-                                        <li><a class="categories-cat__link interaction" href="#">Экшн-камеры</a></li>
-                                    </ul>
-                                    <ul class="dropdown_two">
-                                        <li><a class="interaction" href="#">Фитнес-браслеты</a></li>
-                                        <li><a class="interaction" href="#">Умные часы</a></li>
-                                    </ul>
-                                    <ul class="dropdown_one">
-                                        <li><a class="interaction" href="#">Квадрокоптеры</a></li>
-                                    </ul>
-                        </ul>
-                    </ul>
-                <ul class="service_nav">
-                    <li class="nav_link_catalog catalog_two"><a class="interaction" href="#">Доставка</a></li>
-                    <li class="nav_link_catalog catalog_three"><a class="interaction" href="#">Гарантия</a></li>
-                    <li class="nav_link_catalog catalog_four"><a class="interaction" href="#">Контакты</a></li>
-                </ul>               
+                        <div class="dropdown">
+                                <ul class="dropdown_category">
+                                  <li><a class="interaction" href="#">Виртуальная реальность</a></li>
+                                  <li><a class="interaction" href="catalog.html">Моноподы для селфи</a></li>
+                                  <li><a class="categories-cat__link interaction" href="#">Экшн-камеры</a></li>
+                                </ul>
+                                <ul class="dropdown_category">
+                                  <li><a class="interaction" href="#">Фитнес-браслеты</a></li>
+                                  <li><a class="interaction" href="#">Умные часы</a></li>
+                                </ul>
+                                <ul class="dropdown_category">
+                                  <li><a class="interaction" href="#">Квадрокоптеры</a></li>
+                                </ul>
+                              </div>
+                          </li>
+                          <li class="nav_link_catalog catalog_two">
+                            <a class="interaction" href="#">Доставка</a>
+                          </li>
+                          <li class="nav_link_catalog catalog_three">
+                            <a class="interaction" href="#">Гарантия</a>
+                          </li>
+                          <li class="nav_link_catalog catalog_four">
+                            <a class="interaction" href="#">Контакты</a>
+                          </li>
+                      </ul>         
             </nav>  
            
         </header>
     
-        <section id="best_device">
+        <section class="best_best_device">
 
             <div class="best_device_wrapper">
            
@@ -74,13 +79,14 @@
 
                 <div class="best_device_longest"><img src="img/best_device_longest.png" width="384" height="486"
                     alt="Самая длинная палка для селфи"></div>
-                <div class="discription_best_device">
+               
+                    <div class="discription_best_device">
                     <p class="slogan">Делай селфи,<br>
                     как Бен Стиллер!</p>
                     <p class="slogan_text">Самая длинная палка для селфи доступна в нашем магазине. <br>
                     Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.                    
                     </p>                
-                    <div class="button"><a href="#">Подробнее</a></div>                  
+                    <div class="button best_device_button"><a href="#">Подробнее</a></div>                  
                             
                             <table class="best_device_characteristic">
                             <tr class="value_one">
@@ -88,13 +94,15 @@
                                 <th>5 кг</th>
                                 <th>Карбон</th>
                             </tr>
+                            
                             <tr class="char_one">
                                 <td>Длина палки</td>
                                 <td>Вес палки</td>
                                 <td>Материал</td>
                             </tr>
-                        </table>                        
-                </div>            
+                        </table>  
+                    </div>
+                           
             </div>
 
             <input type="radio" name="slider1" id="slider1_2">
@@ -149,9 +157,10 @@
             </div>    
         </div>   
         </section>
+        
             <section class="menu_cards">
 
-            <h1 class="visually-hidden">Устройства для селфи</h1>
+            <h1 class="visually_hidden">Устройства для селфи</h1>
             <ul class="menu_devices">
                     <li>                        
                         <a href="#">
@@ -241,11 +250,6 @@
                 </ul>
         
         </section>
-<div>
-    <div class="pr1">
-
-    </div>
-</div>
 
     
 
@@ -296,34 +300,37 @@
                 <h2>Контакты</h2>
                 <p>Вы можете забрать товар сами, заехав в наш офис. 
                     Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>                
-                <a href="map.html"><img src="img/map_small.jpg" width="560" 
+                
+                    <a class="contacts_map" href="map.html"><img src="img/map_small.jpg" width="560" 
                     height="222" alt="Карта"></a>
-                <div class="button"><a href="#">Напишите нам</a></div>
+                <div  class="plus"><div class="button"><a href="#">Напишите нам</a></div></div>
             </div>
         </section>   
         
         
         <footer class="footer_main">
-               <div class="foore_user">
+            <div class="footer_wrapper">
+               <div class="footer_user">
                     <div><a class="main_footer_logo">DEVICE</a></div>                
-                    <ul class="user-navigation">
+                    <ul class="footer_user-navigation">
                         <li class="footer_login-link">
-                            <a class="interaction" href="#">Войти</a>                    
+                            <a class="footer_interaction" href="#">Войти</a>                    
                         </li>                               
-                        <li class="footer_compare"><a class="interaction" href="#">Сравнить</a></li>
-                        <li class="footer_backet"><a class="interaction" href="#">Корзина</a></li>
+                        <li class="footer_compare"><a class="footer_interaction" href="#">Сравнить</a></li>
+                        <li class="footer_backet"><a class="footer_interaction" href="#">Корзина</a></li>
                     </ul> 
                 </div>
                 <div class="footer_contacts">
                         <p>г. Москва, ул. Строителей, 15</p>                    
                         <ul class="footer_menu_service menu_service">
-                            <li><a href="#">Доставка</a></li>
-                            <li><a href="#">Гарантия</a></li>
-                            <li><a href="#">Контакты</a></li>
+                            <li><a class="footer_service_interaction" href="#">Доставка</a></li>
+                            <li><a class="footer_service_interaction" href="#">Гарантия</a></li>
+                            <li><a class="footer_service_interaction" href="#">Контакты</a></li>
                         </ul>
-                        <a href="tel:+79454959595" >Тел.: +7 (495) 495-95-95</a>
+                        <p><a  class="footer_tel" href="tel:+79454959595">Тел.: +7 (495) 495-95-95</a></p>
                 </div>
                 <div class="footer_friends">
+                    <div class="line"></div>
                         <div class="footer-social"> 
                             <ul>                           
                                 <li>
@@ -338,10 +345,13 @@
                             </ul>
                         </div>
                         <p class="footer-copyright">
-                            <b>Разработано:</b> <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+                            <a href="https://htmlacademy.ru"><span class="visually_hidden">HTML Academy</span></a>
                         </p>
                         </div>
+            </div>
         </footer>   
+
+
         <section class="filters">
             <h2 class="visually-hidden">Форма для связи</h2>
             <form class="write_to_us" method="get" action="https://echo.htmlacademy.ru">
