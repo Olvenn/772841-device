@@ -174,7 +174,8 @@ input[type="radio"].visually_hidden {
 /*поиск*/
 .search_cite {
   display: flex;
- 
+  display: -webkit-box;
+  display: -ms-flexbox;
 }
 
 .search_field {
@@ -192,12 +193,12 @@ input[type="radio"].visually_hidden {
   background-position: 3px 16px;
 }
 
-.search_field::placeholder {
+.search_field::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.search_field:hover::placeholder,
-.search_field:focus::placeholder {
+.search_field:hover::-webkit-input-placeholder,
+.search_field:focus::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -218,12 +219,12 @@ input[type="radio"].visually_hidden {
 .search_button:hover,
 .search_button:focus,
 .search_button:active {
-  color: rgb(255, 255, 255);
+  color: #fff;
   background-color: rgba(0, 0, 0, 1);
   top: 0px;
 }
 
-
+.search_field:hover,
 .search_field:focus,
 .search_field:active {
   border-bottom: solid 2px rgba(0, 0, 0, 1);
@@ -232,16 +233,16 @@ input[type="radio"].visually_hidden {
 .search_field:focus + .search_button {
   top: 0;
 }
-/*
+
 .search_field::-webkit-search-cancel-button {
   display: none;
-
+}
 
 .search_field::-ms-clear {
   display: none;
   width: 0;
   height: 0;
-}}*/
+}
 /*поиск*/
 
 .user-navigation {
@@ -260,6 +261,14 @@ input[type="radio"].visually_hidden {
 .logik-link_catalog {
     margin-left: -37px;
     padding-right: 36px;
+}
+
+.compare_catalog {
+   
+}
+
+.profile_catalog {
+
 }
 
 .compare {
@@ -1553,8 +1562,7 @@ a.main_footer_logo {
   border-radius: 50%;
 }
 
-.filter_input:checked + label::after
- {
+.filter_input_radio + label::after {
   content: "";
   position: absolute;
   width: 9px;
@@ -1564,25 +1572,6 @@ a.main_footer_logo {
   background-color: rgba(0, 0, 0, 1);
   border-radius: 50%;
 }
-
-.filter_input_radio + label:hover::before, 
-.filter_input_radio + label:focus::before,
-.filter_input_radio + label:hover::after,
-.filter_input_radio + label:focus::after {
-  opacity: 0.6;
-}
-
-.filter_input_radio + label:active::before,
-.filter_input_radio + label:active::after {
-  opacity: 1;
-}
-
-
-
-.filter_input_radio:disabled + label::after {
-  opacity: 0.25;
-}
-
 
 .filter_button {
   width: 200px;

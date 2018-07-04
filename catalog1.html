@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style1.css" rel="stylesheet">
 </head>
 
 <body>
@@ -99,7 +99,6 @@
 
   <main class="main_container">
     <section class="wrapper_filters">
-      <h2 class="visually_hidden">Фильтры для каталога</h2>
       <div class="calalog_select_filter">
 
         <p class="subsection_filter calalog_subsection">Фильтр:</p>
@@ -118,10 +117,14 @@
               </div>
 
               <p class="price_controls">
+
                 от
-                  <input class="proba" type="text" name="min-price" value="0">                
+                  <input class="proba" type="text" name="min-price" value="0">
+                
+                
                до&nbsp;&nbsp;
-                  <input class="proba" type="text" name="max-price" value="5000">                  
+                  <input class="proba" type="text" name="max-price" value="5000">
+                  
                 </p>
             </div>
           </fieldset>
@@ -164,15 +167,15 @@
                   Розовый
                 </label>
               </li>
-            </ul>
+              <ul>
           </fieldset>
 
           <fieldset class="filter_wrapper filter_Bluetooth">
             <legend class="legend_title">Bluetooth</legend>
             <ul>
               <li class="filter-option">
-                <input class="visually_hidden filter_input filter_input_radio" 
-                type="radio" name="Bluetooth" value="yes_bt" id="filter_yes_bt" checked>
+                <input class="visually_hidden filter_input filter_input_radio" type="radio" name="Bluetooth" value="yes_bt" id="filter_yes_bt"
+                  checked>
                 <label for="filter_yes_bt">Есть</label>
               </li>
               <li class="filter-option">
@@ -187,7 +190,7 @@
     </section>
 
     <section class="wrapper_catalog">
-      
+      <div class="calalog_select_sort">
         <div class="wrapper_sort">
           <p class="subsection_filter calalog_subsection">Сортировка:</p>
 

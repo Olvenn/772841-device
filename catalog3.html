@@ -9,8 +9,10 @@
 </head>
 
 <body>
-  <header class="main_navigation catalog_main_navigation">    
-    <a class="main_header_logo interaction" href="index.html">DEVICE</a>   
+  <header class="main_navigation catalog_main_navigation">
+    <!-- <div> -->
+      <a class="main_header_logo interaction" href="index.html">DEVICE</a>
+    <!-- </div> -->
     <div class="wrapper_header">
       <div class="search_cite">
         <form class="search_cite search_wrapper" action="/echo" method="get" target="_blank">
@@ -19,14 +21,12 @@
           <button class="search_button" type="submit">Найти</button>
         </form>
       </div>
+
       <ul class="user-navigation">
-        <li class="profile profile_catalog avatar">
-          <a class="interaction" href="#">Валентин Петухов</a>
+        <li class="login-link">
+          <a class="interaction" href="#">Войти</a>
         </li>
-        <li class="login-link logik-link_catalog">
-          <a class="interaction" href="#">Выйти</a>
-        </li>
-        <li class="compare compare_catalog">
+        <li class="compare">
           <a class="interaction" href="#">Сравнить</a>
         </li>
         <li class="backet">
@@ -34,7 +34,7 @@
         </li>
       </ul>
     </div>
-    
+    </div>
 
     <nav class="nav">
       <ul class="nav_list">
@@ -98,8 +98,7 @@
   </div>
 
   <main class="main_container">
-    <section class="wrapper_filters">
-      <h2 class="visually_hidden">Фильтры для каталога</h2>
+    <section class="filters2">
       <div class="calalog_select_filter">
 
         <p class="subsection_filter calalog_subsection">Фильтр:</p>
@@ -109,20 +108,24 @@
           <fieldset class="filter_wrapper cost_filter">
             <legend class="legend_title">Стоимость</legend>
             <div class="cost_filter_title visually_hidden">Стоимость</div>
-            <div class="cost_range_controls">
+            <div class="cost_range-controls">
 
               <div class="cost_scale">
                 <div class="cost_bar"></div>
-                <div class="cost_range_toggle cost_range_toggle_min"></div>
-                <div class="cost_range_toggle cost_range_toggle_max"></div>
+                <div class="cost_range-toggle cost_range-toggle-min"></div>
+                <div class="cost_range-toggle cost_range-toggle-max"></div>
               </div>
 
-              <p class="price_controls">
-                от
-                  <input class="proba" type="text" name="min-price" value="0">                
-               до&nbsp;&nbsp;
-                  <input class="proba" type="text" name="max-price" value="5000">                  
-                </p>
+              <div class="price-controls">
+
+                <lable>от&nbsp;&nbsp;
+                  <input class="proba" type="text" name="min-price" value="0">
+                </lable>
+
+                <lable>до&nbsp;&nbsp;
+                  <input class="proba" type="text" name="max-price" value="3000">
+                  </label>
+              </div>
             </div>
           </fieldset>
 
@@ -164,15 +167,15 @@
                   Розовый
                 </label>
               </li>
-            </ul>
+              <ul>
           </fieldset>
 
           <fieldset class="filter_wrapper filter_Bluetooth">
             <legend class="legend_title">Bluetooth</legend>
             <ul>
               <li class="filter-option">
-                <input class="visually_hidden filter_input filter_input_radio" 
-                type="radio" name="Bluetooth" value="yes_bt" id="filter_yes_bt" checked>
+                <input class="visually_hidden filter_input filter_input_radio" type="radio" name="Bluetooth" value="yes_bt" id="filter_yes_bt"
+                  checked>
                 <label for="filter_yes_bt">Есть</label>
               </li>
               <li class="filter-option">
@@ -186,8 +189,8 @@
       </div>
     </section>
 
-    <section class="wrapper_catalog">
-      
+    <section class="filters3">
+      <div class="calalog_select_sort">
         <div class="wrapper_sort">
           <p class="subsection_filter calalog_subsection">Сортировка:</p>
 
@@ -196,18 +199,22 @@
             <li>По типу</li>
             <li>По популярности</li>
           </ul>
-          <ul class="direction direction_order">
+          <ul class="direction">
             <li>
-              <a class="direction_options up" href="#"></a>
+              <a class="direction_options up" href="#">
+                <img src="img/icon-up-dir.svg" width="12px" height="10px" alt="Сортировка по возрастанию">
+              </a>
             </li>
             <li>
-              <a class="direction_options down"></a>
+              <a class="direction_options down">
+                <img src="img/icon-down-dir.svg" width="12px" height="10px" alt="Сортировка по убыванию">
+              </a>
             </li>
           </ul>
         </div>
 
         <div class="catalog">
-          <ul class="catalog_list">
+          <ul class="catalog-list">
             <li class="catalog_item item new_item">
               <img class="image    offer__img" src="img/item1_small.jpg" width="360" height="380" alt="Любительская селфи-палка">
               <h3 class="item_title">
@@ -231,7 +238,7 @@
                 <a class="offer__link" href="#">Профессиональная
                   <br> селфи-палка</a>
               </h3>
-              <p class="cost offer__price">1&nbsp;500 руб.</p>
+              <p class="cost offer__price">1500 руб.</p>
 
               <ul class="choice  choice_cart_options">
                 <li class="inBasket">
@@ -248,7 +255,7 @@
               <h3 class="item_title">
                 <a class="offer__link" href="#">Непотопляемая селфи-палка</a>
               </h3>
-              <p class="cost offer__price">2&nbsp;500 руб.</p>
+              <p class="cost offer__price">2500 руб.</p>
 
               <ul class="choice  choice_cart_options">
                 <li class="inBasket">
@@ -264,7 +271,7 @@
               <h3 class="item_title">
                 <a class="offer__link" href="#">Селфи-палка «Следуй за мной»</a>
               </h3>
-              <p class="cost offer__price">4&nbsp;900 руб.</p>
+              <p class="cost offer__price">4900 руб.</p>
 
               <ul class="choice  choice_cart_options">
                 <li class="inBasket">
@@ -307,7 +314,7 @@
     <div class="footer_wrapper">
       <div class="footer_user">
         <div>
-          <a class="main_footer_logo" href="index.html">DEVICE</a>
+          <a class="main_footer_logo">DEVICE</a>
         </div>
         <ul class="footer_user-navigation">
           <li class="footer_login-link">
@@ -368,5 +375,4 @@
     </div>
   </footer>
 </body>
-
 </html>
