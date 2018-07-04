@@ -271,6 +271,18 @@ input[type="radio"].visually_hidden {
     padding-left: 0px; 
 }
 
+.plus_plus::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  background-image: url("../img/plus.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 34px;
+  left: 230px;
+}
+
 .login-link a {
     padding-left: 28px;
 }  
@@ -431,11 +443,12 @@ input[type="radio"].visually_hidden {
 
 .best_device_two img {
   margin-left: 115px;
+  margin-top: 13px;
 }
 
 .best_device_three img {
   margin-left: 30px;
-  margin-bottom: 25px;
+  margin-top: 62px;
 }
 
 .slogan,
@@ -486,6 +499,57 @@ h1 {
   width: 1160px;
   margin: 0 auto;
   top: -112px;
+}
+
+.best_device_wrapper::before  {
+  position: absolute;
+  top: 35px;
+  right: 458px;
+  display: block;
+  width: 100px;
+  height: 7px;
+  content: "";  
+  background-color: rgb(255, 255, 255);  
+}
+
+
+.best_device_one::before  {
+  content: "01";
+  position: absolute;
+  top: -25px;
+  right: 46px;
+  display: block;  
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 179px;
+  line-height: 200px; 
+  color: rgb(255, 255, 255);
+}
+
+.best_device_two::before  {
+  content: "02";
+  position: absolute;
+  top: -25px;
+  right: 48px;
+  display: block;  
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 179px;
+  line-height: 200px; 
+  color: rgb(255, 255, 255);
+}
+
+.best_device_three::before  {
+  content: "03";
+  position: absolute;
+  top: -25px;
+  right: 48px;
+  display: block;  
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 179px;
+  line-height: 200px; 
+  color: rgb(255, 255, 255);
 }
 
 .sliderA {
