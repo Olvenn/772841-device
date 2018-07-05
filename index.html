@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
     <header class="main_navigation">
         <a class="main_header_logo interaction">DEVICE</a>
@@ -19,22 +17,24 @@
                     <button class="search_button" type="submit">Найти</button>
                 </form>
             </div>
-            <ul class="user-navigation">
-                <li class="login-link avatar">
+            <ul class="user_navigation">
+                <li class="login_link avatar interaction">
                     <a class="interaction" href="#">Войти</a>
                 </li>
-                <li class="compare">
+                <li class="compare interaction">
                     <a class="interaction" href="#">Сравнить</a>
                 </li>
-                <li class="backet">
+                <li class="backet interaction">
                     <a class="interaction" href="#">Корзина</a>
-                </li>s
+                </li>
             </ul>
         </div>
         <nav class="nav">
             <ul class="nav_list">
                 <li class="nav_link_catalog">
-                    <a class="interaction" href="#"><span class="plus_plus">Каталог товаров</span></a>
+                    <a class="interaction" href="#">
+                        <span class="plus_plus">Каталог товаров</span>
+                    </a>
                     <div class="dropdown">
                         <ul class="dropdown_category">
                             <li>
@@ -44,7 +44,7 @@
                                 <a class="interaction" href="catalog.html">Моноподы для селфи</a>
                             </li>
                             <li>
-                                <a class="categories-cat__link interaction" href="#">Экшн-камеры</a>
+                                <a class="categories_cat_link interaction" href="#">Экшн-камеры</a>
                             </li>
                         </ul>
                         <ul class="dropdown_category">
@@ -105,7 +105,7 @@
                                     <td>Вес палки</td>
                                     <td>Материал</td>
                                 </tr>
-                            </table>                            
+                            </table>
                         </div>
                     </div>
                     <input type="radio" name="slider1" id="slider1_2">
@@ -225,12 +225,12 @@
         </section>
         <section class="service_menu">
             <input class="services_toggler services_toggler_1 visually_hidden" id="services_toggler_1" type="radio" name="services" value="1"
-            checked>
-                <label class="button services_label services_label_1" for="services_toggler_1">Доставка</label>
+                checked>
+            <label class="button services_label services_label_1" for="services_toggler_1">Доставка</label>
             <input class="services_toggler services_toggler_2 visually_hidden" id="services_toggler_2" type="radio" name="services" value="2">
-                <label class="button services_label services_label_2" for="services_toggler_2">Гарантия</label>
+            <label class="button services_label services_label_2" for="services_toggler_2">Гарантия</label>
             <input class="services_toggler services_toggler_3 visually_hidden" id="services_toggler_3" type="radio" name="services" value="3">
-                <label class="button services_label services_label_3" for="services_toggler_3">Кредит</label>
+            <label class="button services_label services_label_3" for="services_toggler_3">Кредит</label>
             <ul class="services_name">
                 <li class="services_description services_delivery">
                     <h2>Доставка</h2>
@@ -304,26 +304,27 @@
                         <a href="#">Напишите нам</a>
                     </div>
                 </div>
-
                 <form class="modal_connection" id="write_to_us" action="https://echo.htmlacademy.ru" target="_blank" method="post">
                     <h2 class="visually_hidden">Форма для связи</h2>
-                    <div class="modal_item">                    
+                    <div class="modal_item">
                         <label class="modal_options" for="name">Ваше имя:</label>
                         <input class="modal_field" id="name" type="text" name="name" placeholder="Имя фамилия" required>
                     </div>
-                    <div class="modal_item">                   
+                    <div class="modal_item">
                         <label class="modal_options" for="email">Ваш e-mail:</label>
                         <input class="modal_field" id="email" type="email" name="email" placeholder="email@example.com" required>
                     </div>
-                    <div class="modal_item modal_item_text">               
-                    <label class="modal_options" for="text">Текст письма:</label>             
-                    <textarea class="modal_field field_textarea" name="text" id="text" placeholder="В свободной форме" required></textarea>
+                    <div class="modal_item modal_item_text">
+                        <label class="modal_options" for="text">Текст письма:</label>
+                        <textarea class="modal_field field_textarea" name="text" id="text" placeholder="В свободной форме" required></textarea>
                     </div>
                     <button class="modal_submit button" type="submit">Отправить</button>
-                    <div><a class="button_close button_close_options" href="#"><img src="img/modal-close.svg" width="55" 
-                        height="55" alt="Закрыть форму для связи"></a></div>
+                    <div>
+                        <a class="button_close button_close_options" href="#">
+                            <img src="img/modal-close.svg" width="55" height="55" alt="Закрыть форму для связи">
+                        </a>
+                    </div>
                 </form>
-
             </div>
         </section>
     </main>
@@ -333,8 +334,8 @@
                 <div>
                     <a class="main_footer_logo">DEVICE</a>
                 </div>
-                <ul class="footer_user-navigation">
-                    <li class="footer_login-link">
+                <ul class="footer_user_navigation">
+                    <li class="footer_login_link">
                         <a class="footer_interaction" href="#">Войти</a>
                     </li>
                     <li class="footer_compare">
@@ -364,32 +365,32 @@
             </div>
             <div class="footer_friends">
                 <div class="line"></div>
-                <div class="footer-social">
+                <div class="footer_social">
                     <ul>
                         <li>
-                            <a class="social-button" href="#">
+                            <a class="social_button" href="#">
                                 <span class="visually_hidden">Фейсбук</span>
                             </a>
                         </li>
                         <li>
-                            <a class="social-button" href="#">
+                            <a class="social_button" href="#">
                                 <span class="visually_hidden">Контакт</span>
                             </a>
                         </li>
                         <li>
-                            <a class="social-button" href="#">
+                            <a class="social_button" href="#">
                                 <span class="visually_hidden">Твиттер</span>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <p class="footer-copyright">
+                <p class="footer_copyright">
                     <a href="https://htmlacademy.ru/intensive/htmlcss">
                         <span class="visually_hidden">HTML Academy</span>
                     </a>
                 </p>
             </div>
         </div>
-    </footer>   
+    </footer>
 </body>
 </html>

@@ -9,8 +9,8 @@
 </head>
 
 <body>
-  <header class="main_navigation catalog_main_navigation">    
-    <a class="main_header_logo interaction" href="index.html">DEVICE</a>   
+  <header class="main_navigation catalog_main_navigation">
+    <a class="main_header_logo interaction" href="index.html">DEVICE</a>
     <div class="wrapper_header">
       <div class="search_cite">
         <form class="search_cite search_wrapper" action="/echo" method="get" target="_blank">
@@ -34,13 +34,11 @@
         </li>
       </ul>
     </div>
-    
 
     <nav class="nav">
       <ul class="nav_list">
         <li class="nav_link_catalog">
           <a class="interaction" href="#">Каталог товаров</a>
-
           <div class="dropdown">
             <ul class="dropdown_category">
               <li>
@@ -81,113 +79,115 @@
     </nav>
   </header>
 
-  <div class="container">
-    <h1 class="page_title">Моноподы для селфи</h1>
-
-    <ul class="breadcrumbs">
-      <li class="breadcrumbs_arrow arrow">
-        <a href="#">Главная</a>
-      </li>
-      <li class="breadcrumbs_arrow arrow">
-        <a href="#">Каталог товаров</a>
-      </li>
-      <li class="arrow">
-        <a href="#">Моноподы для селфи</a>
-      </li>
-    </ul>
-  </div>
-
   <main class="main_container">
-    <section class="wrapper_filters">
-      <h2 class="visually_hidden">Фильтры для каталога</h2>
-      <div class="calalog_select_filter">
+    <div class="page_header">
+      <h1 class="page_title">Моноподы для селфи</h1>
 
-        <p class="subsection_filter calalog_subsection">Фильтр:</p>
+      <ul class="breadcrumbs">
+          <li class="breadcrumbs_arrow arrow">
+            <a class="arrow1" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs_arrow arrow">
+            <a  class="arrow2" href="#">Каталог товаров</a>
+          </li>
+          <li class="arrow">
+            <a href="#">Моноподы для селфи</a>
+          </li>
+        </ul>
+    </div>
 
-        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+    <div class="main_wrapper">
+      <section class="wrapper_filters">
+        <h2 class="visually_hidden">Фильтры для каталога</h2>
+        <div class="calalog_select_filter">
 
-          <fieldset class="filter_wrapper cost_filter">
-            <legend class="legend_title">Стоимость</legend>
-            <div class="cost_filter_title visually_hidden">Стоимость</div>
-            <div class="cost_range_controls">
+          <div class="filter_title_wrapper">
+            <p class="subsection_filter calalog_subsection">Фильтр:</p>
+          </div>
 
-              <div class="cost_scale">
-                <div class="cost_bar"></div>
-                <div class="cost_range_toggle cost_range_toggle_min"></div>
-                <div class="cost_range_toggle cost_range_toggle_max"></div>
-              </div>
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
 
-              <p class="price_controls">
-                от
-                  <input class="proba" type="text" name="min-price" value="0">                
-               до&nbsp;&nbsp;
-                  <input class="proba" type="text" name="max-price" value="5000">                  
+            <fieldset class="filter_wrapper cost_filter">
+              <legend class="legend_title">Стоимость</legend>
+              <div class="cost_filter_title visually_hidden">Стоимость</div>
+              <div class="cost_range_controls">
+
+                <div class="cost_scale">
+                  <div class="cost_bar"></div>
+                  <div class="cost_range_toggle cost_range_toggle_min"></div>
+                  <div class="cost_range_toggle cost_range_toggle_max"></div>
+                </div>
+
+                <p class="price_controls">
+                  от
+                  <input class="proba" type="text" name="min-price" value="0"> до&nbsp;&nbsp;
+                  <input class="proba" type="text" name="max-price" value="5000">
                 </p>
-            </div>
-          </fieldset>
+              </div>
+            </fieldset>
 
-          <fieldset class="filter_wrapper filter_color">
-            <legend class="legend_title">Цвет</legend>
-            <ul>
-              <li class="filter-option">
-                <label for="filter-black">
-                  <input class="visually_hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="filter-black" checked>
-                  <span class="color_checkbox-indicator"></span>
-                  Черный
-                </label>
-              </li>
-              <li class="filter-option">
-                <label for="filter-white">
-                  <input class="visually_hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="filter-white">
-                  <span class="color_checkbox-indicator"></span>
-                  Белый
-                </label>
-              </li>
-              <li class="filter-option">
-                <label for="filter-blue">
-                  <input class="visually_hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="filter-blue" checked>
-                  <span class="color_checkbox-indicator"></span>
-                  Синий
-                </label>
-              </li>
-              <li class="filter-option">
-                <label for="filter-red">
-                  <input class="visually_hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="filter-red" checked>
-                  <span class="color_checkbox-indicator"></span>
-                  Красный
-                </label>
-              </li>
-              <li class="filter-option">
-                <label for="filter-pink">
-                  <input class="visually_hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="filter-pink">
-                  <span class="color_checkbox-indicator"></span>
-                  Розовый
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+            <fieldset class="filter_wrapper filter_color">
+              <legend class="legend_title">Цвет</legend>
+              <ul>
+                <li class="filter-option">
+                  <label for="filter-black">
+                    <input class="visually_hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="filter-black" checked>
+                    <span class="color_checkbox-indicator"></span>
+                    Черный
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label for="filter-white">
+                    <input class="visually_hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="filter-white">
+                    <span class="color_checkbox-indicator"></span>
+                    Белый
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label for="filter-blue">
+                    <input class="visually_hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="filter-blue" checked>
+                    <span class="color_checkbox-indicator"></span>
+                    Синий
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label for="filter-red">
+                    <input class="visually_hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="filter-red" checked>
+                    <span class="color_checkbox-indicator"></span>
+                    Красный
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label for="filter-pink">
+                    <input class="visually_hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="filter-pink">
+                    <span class="color_checkbox-indicator"></span>
+                    Розовый
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
 
-          <fieldset class="filter_wrapper filter_Bluetooth">
-            <legend class="legend_title">Bluetooth</legend>
-            <ul>
-              <li class="filter-option">
-                <input class="visually_hidden filter_input filter_input_radio" 
-                type="radio" name="Bluetooth" value="yes_bt" id="filter_yes_bt" checked>
-                <label for="filter_yes_bt">Есть</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually_hidden filter_input filter_input_radio" type="radio" name="Bluetooth" value="no_bt" id="filter_no_bt">
-                <label for="filter_no_bt">Нет</label>
-              </li>
-            </ul>
-          </fieldset>
-          <button type="submit" class="button filter_button">Показать</button>
-        </form>
-      </div>
-    </section>
+            <fieldset class="filter_wrapper filter_Bluetooth">
+              <legend class="legend_title">Bluetooth</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually_hidden filter_input filter_input_radio" type="radio" name="Bluetooth" value="yes_bt" id="filter_yes_bt"
+                    checked>
+                  <label for="filter_yes_bt">Есть</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually_hidden filter_input filter_input_radio" type="radio" name="Bluetooth" value="no_bt" id="filter_no_bt">
+                  <label for="filter_no_bt">Нет</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit" class="button filter_button">Показать</button>
+          </form>
+        </div>
+      </section>
 
-    <section class="wrapper_catalog">
-      
+      <section class="wrapper_catalog">
+
         <div class="wrapper_sort">
           <p class="subsection_filter calalog_subsection">Сортировка:</p>
 
@@ -300,7 +300,9 @@
           </ul>
           <div class="bottom_catalog"></div>
         </div>
-    </section>
+      </section>
+    </div>
+
   </main>
 
   <footer class="footer_main">
@@ -339,29 +341,29 @@
         </p>
       </div>
       <div class="footer_friends">
-        <div class="line"></div>
-        <div class="footer-social">
-          <ul>
-            <li>
-              <a class="social-button" href="#">
-                <span class="visually_hidden">Фейсбук</span>
-              </a>
-            </li>
-            <li>
-              <a class="social-button" href="#">
-                <span class="visually_hidden">Контакт</span>
-              </a>
-            </li>
-            <li>
-              <a class="social-button" href="#">
-                <span class="visually_hidden">Твиттер</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <p class="footer-copyright">
-          <a href="https://htmlacademy.ru">
-            <span class="visually_hidden">HTML Academy</span>
+          <div class="line"></div>
+          <div class="footer_social">
+            <ul>
+              <li class="facebook">
+                <a class="social_button" href="#">
+                  <span class="visually_hidden">Фейсбук</span>
+                </a>
+              </li>
+              <li class="kontakt">
+                <a class="social_button" href="#">
+                  <span class="visually_hidden">Контакт</span>
+                </a>
+              </li>
+              <li class="twitter">
+                <a class="social_button" href="#">
+                  <span class="visually_hidden">Твиттер</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p class="footer_copyright">
+            <a href="https://htmlacademy.ru">
+              <span class="visually_hidden">HTML Academy</span>
           </a>
         </p>
       </div>
