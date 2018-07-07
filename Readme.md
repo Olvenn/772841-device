@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/21/user/772841).
-* Наставник: `Андрей Грачев`.
+* Студент: [Ольга Венцель](https://up.htmlacademy.ru/htmlcss/21/user/772841).
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/id252055).
 
 ---
 
