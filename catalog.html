@@ -7,6 +7,7 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
+
 <body>
   <header class="main_navigation catalog_main_navigation">
     <a class="main_header_logo interaction" href="index.html">DEVICE</a>
@@ -177,16 +178,22 @@
         <div class="wrapper_sort">
           <p class="subsection_filter calalog_subsection">Сортировка:</p>
           <ul class="sort">
-            <li href="#">По цене</li>
-            <li href="#">По типу</li>
-            <li href="#">По популярности</li>
+            <li>
+              <a href="#" aria-label="Сортировка по цене">По цене</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Сортировка по типу">По типу</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Сортировка по популярности">По популярности</a>
+            </li>
           </ul>
           <ul class="direction direction_order">
             <li>
-              <a class="direction_options up" href="#" alt="Сортировка по возрастанию"></a>
+              <a class="direction_options up" href="#" aria-label="Сортировка по возрастанию"></a>
             </li>
             <li>
-              <a class="direction_options down" alt="Сортировка по убыванию"></a>
+              <a class="direction_options down" aria-label="Сортировка по убыванию"></a>
             </li>
           </ul>
         </div>
@@ -290,7 +297,7 @@
             <a class="interaction" href="#">Валентин Петухов</a>
           </li>
           <li class="footer_login-link">
-            <a class="footer_interaction" href="#">Войти</a>
+            <a class="footer_interaction" href="#">Выйти</a>
           </li>
           <li class="footer_compare">
             <a class="footer_interaction" href="#">Сравнить</a>
@@ -347,4 +354,5 @@
     </div>
   </footer>
 </body>
+
 </html>
